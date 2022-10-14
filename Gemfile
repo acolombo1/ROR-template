@@ -50,16 +50,16 @@ gem 'bootsnap', require: false
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem 'debug', platforms: %i[mri mingw x64_mingw]
-  gem 'rspec-rails', '~> 3.5'
   gem 'bullet'
+  gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'letter_opener'
-  end
+  gem 'rspec-rails', '~> 3.5'
+end
 
 group :test do
-  gem 'ffi'
   gem 'capybara'
   gem 'database_cleaner'
+  gem 'ffi'
 end
 
 group :development do
@@ -72,5 +72,5 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
-gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'devise'
+gem 'rubocop', '>= 1.0', '< 2.0'
